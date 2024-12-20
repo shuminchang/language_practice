@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px; /* 限制主內容的最大寬度 */
+    margin: auto; /* 使主內容居中 */
+}
+
+section {
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* 添加過渡效果 */
+}
+
+section:hover {
+    transform: scale(1.02); /* 鼠標懸停時放大效果 */
+}
+
+#questions {
+    background: #e9ecef; /* 淺灰色背景 */
+    border-left: 5px solid #007bff; /* 左側藍色邊框 */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px; /* 與翻譯結果之間的間距 */
+    font-size: 1.2em; /* 字體大小 */
+    color: #333; /* 字體顏色 */
+}
+
+#translationResult {
+    background: #e9ecef; /* 淺灰色背景 */
+    border-left: 5px solid #28a745; /* 左側綠色邊框 */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px; /* 與按鈕區域之間的間距 */
+    font-size: 1.2em; /* 字體大小 */
+    color: #333; /* 字體顏色 */
+}
+
+#buttonContainer {
+    display: grid; /* 使用網格佈局 */
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* 將最小寬度設置為 80px */
+    gap: 10px; /* 按鈕之間的間距 */
+}
+
+button {
+    background-color: #5cb85c; /* 按鈕顏色 */
+    color: white;
+    border: none;
+    padding: 10px; /* 調整按鈕內邊距 */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* 添加過渡效果 */
+    font-size: 0.9em; /* 調整按鈕字體大小 */
+}
+
+button:hover {
+    background-color: #4cae4c; /* 鼠標懸停時的顏色 */
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* 添加上陰影 */
+}
+
+@media (max-width: 600px) {
+    button {
+        width: 100%; /* 在小屏幕上按鈕全寬 */
+        margin: 5px 0; /* 按鈕之間的間距 */
+    }
+}
